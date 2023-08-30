@@ -9,6 +9,7 @@ import React from 'react';
     // const singleTutor: Tutor= await getSingleTutor(popularId)
     console.log(popularId)
     console.log('singlePage', popularId)
+    
     const res = await fetch(`${process.env.NEXT_PUBLIC_DB_HOST}/api/tutors/${popularId}`,{
 		cache: 'no-cache'
 	})
