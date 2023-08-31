@@ -2,11 +2,6 @@ import LoginSvg from "@/components/LoginSvg";
 import LoginForm from "./LoginForm";
 
 
-
-export const metadata = {
-  title: "Edu-mentor",
-};
-
 const LoginPage = () => {
   return (
     <div className="hero bg-base-200 w-full">

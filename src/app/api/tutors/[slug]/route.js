@@ -14,7 +14,7 @@ export const GET = async (request, { params }) => {
       // return {};
     }
     const tutorId = slug; // Replace with the actual _id value
-    const tutor = await Tutors.findOne({ _id: tutorId });
+    const tutor = await Tutors.findOne({ _id: tutorId.toString() });
     
 
 
