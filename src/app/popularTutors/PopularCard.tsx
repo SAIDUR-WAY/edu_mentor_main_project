@@ -14,7 +14,7 @@ const TestForButton = (id: (number | string)) => {
 
 const PopularCard: React.FC<PopularCardProps> = ({data}) => {
   // console.log(data)
-  const {name, _id, image_url, education, education_qualification} = data;
+  const {name, _id, image_url, education, education_qualification} = data || {};
   
     return (
         <div className='my-4 mx-auto relative w-full'>

@@ -16,7 +16,7 @@ import React from 'react';
 	const singleTutor = await res.json();
    
 
-    const { image_url, name, id, tuition_info, area_covered}= singleTutor || {};
+    const { image_url, name, id, tuition_info, area_covered}= singleTutor || [];
     return (
         <div className="m-10 w-1/2 bg-white ">
             <h3 className="text-3xl font-bold divide-x-2 divide-neutral-900 mb-4  ">Tutor Profile</h3>
