@@ -23,6 +23,7 @@ const PopularTutors = async  () => {
 		cache: 'no-cache'
 	})
 	const mentorData = await res.json();
+	console.log(mentorData)
 
 
 	return (
