@@ -10,7 +10,7 @@ import React from 'react';
     console.log(popularId)
     console.log('singlePage', popularId)
     
-    const res = await fetch(`${process.env.NEXT_PUBLIC_DB_HOST}/api/tutors/${popularId}`,{
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/tutors/${popularId}`,{
 		cache: 'no-cache'
 	})
 	const singleTutor = await res.json();

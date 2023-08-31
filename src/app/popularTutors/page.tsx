@@ -19,11 +19,11 @@ const PopularTutors = async  () => {
 	 
 	// const mentorData = await getData();
 
-	const res = await fetch(`${process.env.NEXT_PUBLIC_DB_HOST}/api/tutors/sort-tutors`,{
-		cache: 'no-cache'
+	const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/tutors/sort-tutors`,{
+		cache: 'force-cache'
 	})
 	const mentorData = await res.json();
-	console.log(mentorData)
+	// console.log(mentorData)
 
 
 	return (
