@@ -8,7 +8,7 @@ import TutorsCard from './TutorsCard';
 const TutorsPage= async  () => {
 
 	const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/tutors`,{
-		cache: 'force-cache'
+		cache: 'no-cache'
 	})
 	const allData = await res.json();
 	// console.log('tutors page data',allData)
